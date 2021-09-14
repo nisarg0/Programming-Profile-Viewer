@@ -1,8 +1,9 @@
 const express = require("express");
 router = express.Router();
 
-sites = require("../controllers/codeforces.controller");
+sites = require("../controllers/userDetails.controller");
 
-router.get("/", sites.codeforces);
+router.get("/codeforces", sites.codeforces);
+router.get("/codechef", sites.codechef);
 
 module.exports = router;

@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // adding morgan to log HTTP requests
 // app.use(morgan("combined"));
 
-app.use("/codeforces", require("./routes/site.route"));
+app.use("/", require("./routes/site.route"));
 
 app.listen(port, () => {
 	console.log(`Listening at port ${port}`);
